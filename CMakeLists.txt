@@ -1,0 +1,5 @@
+project( main )
+file(GLOB sources ${PROJECT_SOURCE_DIR}/*.cpp)
+file(GLOB headers ${PROJECT_SOURCE_DIR}/*.hpp)
+add_executable( main main.cpp ${sources} ${headers} )
+target_link_libraries( main libserial.so )
